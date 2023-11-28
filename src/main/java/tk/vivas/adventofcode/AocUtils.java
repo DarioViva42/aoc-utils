@@ -1,4 +1,4 @@
-package vivas.tk.adventofcode;
+package tk.vivas.adventofcode;
 
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.StringUtils;

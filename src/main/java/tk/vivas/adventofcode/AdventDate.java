@@ -1,4 +1,4 @@
-package vivas.tk.adventofcode;
+package tk.vivas.adventofcode;
 
 record AdventDate(int year, int day) {
     public static AdventDate fromClass(Class<?> callerClass) {
