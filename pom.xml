@@ -10,7 +10,28 @@
     <packaging>jar</packaging>
 
     <name>Advent of Code Utilities</name>
+    <description>Simple companion utility for advent of code.</description>
     <url>http://vivas.tk</url>
+
+    <licenses>
+        <license>
+            <name>GNU GENERAL PUBLIC LICENSE</name>
+            <url>https://www.gnu.org/licenses/gpl-3.0.html</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Dario Viva</name>
+            <email>darioviva@gmail.com</email>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/DarioViva42/aoc-utils.git</connection>
+        <developerConnection>scm:git:ssh://github.com:DarioViva42/aoc-utils.git</developerConnection>
+        <url>http://github.com/DarioViva42/aoc-utils</url>
+    </scm>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
