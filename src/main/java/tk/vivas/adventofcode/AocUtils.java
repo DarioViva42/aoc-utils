@@ -12,6 +12,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
+import java.net.URI;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.time.Duration;
@@ -78,7 +79,7 @@ public class AocUtils {
      */
     private static Optional<HttpURLConnection> createPostRequest(AdventDate date, String form) {
         try {
-            URL url = new URL(SERVER_PATH.formatted(date.year(), date.day(), "answer"));
+            URL url = URI.create(SERVER_PATH.formatted(date.year(), date.day(), "answer")).toURL();
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("POST");
             connection.setRequestProperty("Cookie", "session=" + System.getProperty("aoc.session"));
@@ -223,7 +224,7 @@ public class AocUtils {
      */
     private static Optional<InputStream> fetchResourceFromServer(AdventDate date) {
         try {
-            URL url = new URL(SERVER_PATH.formatted(date.year(), date.day(), "input"));
+            URL url = URI.create(SERVER_PATH.formatted(date.year(), date.day(), "input")).toURL();
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             connection.setRequestProperty("Cookie", "session=" + System.getProperty("aoc.session"));
             return Optional.of(connection.getInputStream());
