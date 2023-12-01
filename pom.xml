@@ -29,7 +29,7 @@
 
     <scm>
         <connection>scm:git:git://github.com/DarioViva42/aoc-utils.git</connection>
-        <developerConnection>scm:git:ssh://github.com:DarioViva42/aoc-utils.git</developerConnection>
+        <developerConnection>scm:git:ssh://github.com/DarioViva42/aoc-utils.git</developerConnection>
         <url>http://github.com/DarioViva42/aoc-utils</url>
     </scm>
 
