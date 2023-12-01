@@ -60,7 +60,7 @@ public class AocUtils {
      *     sendPuzzleAnswer(1, "helloWorld");
      * }
      * @param level The level for which you try to send an answer.
-     * @param answer The answer you have come up with and want to send to the AoC-Server.
+     * @param answer The answer you have come up with and want to send to the AoC server.
      */
     public static void sendPuzzleAnswer(int level, Object answer) {
         LOGGER.info("sending {}…", answer);
