@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>tk.vivas.adventofcode</groupId>
     <artifactId>aoc-utils</artifactId>
-    <version>0.9-SNAPSHOT</version>
+    <version>0.9</version>
     <packaging>jar</packaging>
 
     <name>Advent of Code Utilities</name>
@@ -31,7 +30,8 @@
         <connection>scm:git:git://github.com/DarioViva42/aoc-utils.git</connection>
         <developerConnection>scm:git:ssh://github.com/DarioViva42/aoc-utils.git</developerConnection>
         <url>http://github.com/DarioViva42/aoc-utils</url>
-    </scm>
+      <tag>aoc-utils-0.9</tag>
+  </scm>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
