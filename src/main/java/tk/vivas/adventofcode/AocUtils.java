@@ -210,7 +210,7 @@ public class AocUtils {
      */
     private static InputStream getResourceFromFile(AdventDate date, int part) {
         String dayPadded = StringUtils.leftPad(String.valueOf(date.day()), 2, '0');
-        String path = "/day" + dayPadded + (char) ('a' + part - 1);
+        String path = "/year%s/day%s%s".formatted(date.year(), dayPadded, (char) ('a' + part - 1));
         return AocUtils.class.getResourceAsStream(path);
     }
 
