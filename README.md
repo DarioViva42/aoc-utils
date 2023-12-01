@@ -10,9 +10,18 @@ This project contains some useful code, to help you focus on the problems themse
 
 <a name="setup"></a>
 ## Setup
-Before you can start using this library you will need to create a security-properties file. 
+Before you can start using this library you will need to create a `security.properties` file. 
 There you will need to add a property called `aoc.session`. 
-You will find your session-id inside a cookie in the networks tab of your browser.
+After you have logged into your AoC account, you will find your session-id inside a cookie in the networks tab of your browser.
+
+![image](https://github.com/DarioViva42/aoc-utils/assets/45972949/79b7b627-1893-40f3-80d2-51125a9108b2)
+
+The session-id in the image above is blurred out, in the developer tools of your browser the id will be clearly visible.
+
+In the `security.properties` file, replace `<YOUR_SESSION_ID>` with your session-id (without parenthesis).
+```properties
+aoc.session=<YOUR_SESSION_ID>
+```
 
 Using this project requires you to fallow a little bit of ceremony. This ceremony will in return make the usage of this utility much more straightforward.
 Your files need to be contained in packages that fallow a certain pattern.
@@ -21,30 +30,32 @@ When you want to solve day 7 of the year 2023 for example you will need to creat
 ```
 ├── src
 │   ├── main
-│   │   └── java
-│   │       └── com.example.aoc
-│   │           ├── year2022
-│   │           │   ├── day01
-│   │           │   │   └── Day1.java
-│   │           │   ├── day02
-│   │           │   │   └── Day2.java
-│   │           │   └── day03
-│   │           │       └── Day3.java
-│   │           └── year2023
-│   │               ├── day01
-│   │               │   └── Day1.java
-│   │               ├── day02
-│   │               │   └── Day2.java
-│   │               ├── day03
-│   │               │   └── Day3.java
-│   │               ├── day04
-│   │               │   └── Day4.java
-│   │               ├── day05
-│   │               │   └── Day5.java
-│   │               ├── day06
-│   │               │   └── Day6.java
-│   │               └── day03
-│   │                   └── Day7.java
+│   │   ├── java
+│   │   │   └── com.example.aoc
+│   │   │       ├── year2022
+│   │   │       │   ├── day01
+│   │   │       │   │   └── Day1.java
+│   │   │       │   ├── day02
+│   │   │       │   │   └── Day2.java
+│   │   │       │   └── day03
+│   │   │       │       └── Day3.java
+│   │   │       └── year2023
+│   │   │           ├── day01
+│   │   │           │   └── Day1.java
+│   │   │           ├── day02
+│   │   │           │   └── Day2.java
+│   │   │           ├── day03
+│   │   │           │   └── Day3.java
+│   │   │           ├── day04
+│   │   │           │   └── Day4.java
+│   │   │           ├── day05
+│   │   │           │   └── Day5.java
+│   │   │           ├── day06
+│   │   │           │   └── Day6.java
+│   │   │           └── day03
+│   │   │               └── Day7.java
+│   │   └── resources
+│   │       └── security.properties
 │   └── test
 ├── pom.xml 
 └── .gitignore
