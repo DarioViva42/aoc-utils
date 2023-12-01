@@ -15,7 +15,8 @@ record AdventDate(int year, int day) {
         String[] tokens = callerClass
                 .getPackageName()
                 .split("\\.");
+        int year = Integer.parseInt(tokens[tokens.length - 2].substring(4));
         int day = Integer.parseInt(tokens[tokens.length - 1].substring(3));
-        return new AdventDate(2022, day);
+        return new AdventDate(year, day);
     }
 }

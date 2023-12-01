@@ -123,10 +123,11 @@ public class AocUtils {
      * when used in tests and directly inside the ‘java’ directory when used to solve the real puzzle.
      *
      * <p> The file needs to fallow a certain naming pattern.
-     * The input data for day six of the year 2022 needs to be saved in the file “day06”.
+     * The input data for day six of the year 2022 needs to be saved in the file “/resource/year2022/day06”.
      * Note that the file has no file ending.
      *
-     * <p> To read the file “day06” you will need to call from a class that is in a package called ‘day06’:
+     * <p> To read the file “/year2022/day06” you will need to call from a class
+     * that is in a package called ‘{@code (…).year2022.day06}’:
      * {@snippet :
      *      readPuzzleInput();
      * }
@@ -150,14 +151,15 @@ public class AocUtils {
      *
      * <p> The file needs to fallow a certain naming pattern.
      * The part is denoted as an “a” for the first part and as a “b” for the second part.
-     * The input data for part two, day seven of the year 2022 needs to be saved in the file “day07b”.
-     * Note that the file has no file ending.
+     * The input data for part two, day seven of the year 2021 needs to be saved
+     * in the file “/resources/year2022/day07b”. Note that the file has no file ending.
      *
      * <p> This method is mainly used when testing days, where there are two different inputs for both parts.
      * Please note, that the ‘resources’ directory needs to be located directly inside the ‘test’ directory
      * when used in tests and directly inside the ‘java’ directory when used to solve the real puzzle.
      *
-     * <p> To read the file “day07b” you will need to call from a class that is in a package called ‘day07’:
+     * <p> To read the file “/year2021/day07b” you will need to call from a class
+     * that is in a package called ‘{@code (…).year2021.day07}’:
      * {@snippet :
      *      readPuzzleInput(2);
      * }
@@ -195,7 +197,7 @@ public class AocUtils {
      */
     private static Optional<InputStream> getResourceFromFile(AdventDate date) {
         String dayPadded = StringUtils.leftPad(String.valueOf(date.day()), 2, '0');
-        String path = "/day" + dayPadded;
+        String path = "/year%s/day%s".formatted(date.year(), dayPadded);
         InputStream inputStream = AocUtils.class.getResourceAsStream(path);
         return inputStream != null ? Optional.of(inputStream) : Optional.empty();
     }
