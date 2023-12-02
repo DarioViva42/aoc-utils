@@ -121,7 +121,7 @@ public class AocUtils {
      * are not delivered by a distinct endpoint on the server, but only shown as part of the puzzle introduction.
      * As for the puzzle itself you don’t necessarily need to create a file for that.
      * Please note, that the ‘resources’ directory needs to be located directly inside the ‘test’ directory
-     * when used in tests and directly inside the ‘java’ directory when used to solve the real puzzle.
+     * when used in tests and directly inside the ‘main’ directory when used to solve the real puzzle.
      *
      * <p> The file needs to fallow a certain naming pattern.
      * The input data for day six of the year 2022 needs to be saved in the file “/resource/year2022/day06”.
