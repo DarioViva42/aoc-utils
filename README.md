@@ -10,8 +10,19 @@ This project contains some useful code, to help you focus on the problems themse
 
 <a name="setup"></a>
 ## Setup
-Before you can start using this library you will need to create a `security.properties` file. 
-There you will need to add a property called `aoc.session`. 
+Add the maven dependancy to fetch the library from maven central.
+```xml
+<dependency>
+    <groupId>tk.vivas.adventofcode</groupId>
+    <artifactId>aoc-utils</artifactId>
+    <version>1.1</version>
+</dependency>
+```
+Before you can start using this library you will need to create a `security.properties` file.
+> [!CAUTION]
+> Please don’t forget to add the `security.properties` file to your projects `.gitignore` file when pushing to a public remote repository.
+> 
+There you will need to add a property called `aoc.session`.
 After you have logged into your AoC account, you will find your session-id inside a cookie in the networks tab of your browser.
 
 ![image](https://github.com/DarioViva42/aoc-utils/assets/45972949/79b7b627-1893-40f3-80d2-51125a9108b2)
