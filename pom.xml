@@ -5,7 +5,7 @@
 
     <groupId>tk.vivas.adventofcode</groupId>
     <artifactId>aoc-utils</artifactId>
-    <version>1.1-SNAPSHOT</version>
+    <version>1.1</version>
     <packaging>jar</packaging>
 
     <name>Advent of Code Utilities</name>
@@ -32,7 +32,7 @@
         <connection>scm:git:git://github.com/DarioViva42/aoc-utils.git</connection>
         <developerConnection>scm:git:ssh://github.com/DarioViva42/aoc-utils.git</developerConnection>
         <url>http://github.com/DarioViva42/aoc-utils</url>
-      <tag>HEAD</tag>
+      <tag>aoc-utils-1.1</tag>
   </scm>
 
     <properties>
